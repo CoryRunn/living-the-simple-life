@@ -1,0 +1,161 @@
+*, *::before, *::after {box-sizing: border-box}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color:#707070;
+    
+}
+
+img {
+    width: 100%;
+}
+
+/** Typography**/
+h1,
+h2 {
+    font-family: 'Lora', serif;
+    color: #143774;
+    font-weight: 400;
+} 
+
+h1 {
+     font-size: 2rem;
+     margin: 0;
+ }
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.page-title-description { /* text under h1 */
+    text-transform: uppercase;
+    color: #1792D2;
+    font-size: .65rem; 
+    margin-top: -.1rem;
+    letter-spacing: .15em;
+}
+
+.nav {
+    color: #717171;
+    text-transform: uppercase;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    padding-bottom: 2em;
+}
+
+.nav a {
+    color: #717171;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: .2em;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.article-text a {
+    color: #1792D2;
+}
+
+.article-read-more {
+    text-transform: uppercase;
+    color: #1792D2;
+    font-size: .875rem;
+    font-weight: bold;
+    letter-spacing: .2em;
+}
+
+.article-info {
+    font-size: .875rem;
+}
+
+.widget-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .3em;
+}
+
+.widget-about-text {
+    color: #143774;
+    font-size: .875rem;
+}
+
+footer {
+    color: #EBEBEB;
+    background: #143774;
+    font-size: 1.125rem;
+}
+
+.copyright {
+    font-weight: 300;
+}
+
+
+/*** Mobile Styles ***/
+
+.header-full-width {
+    background: #EBEBEB;
+    margin: 0;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-text {
+    text-align: center;
+    padding: 3rem 0 0.5rem 0;
+}
+
+/* Parent made a flex container to reorder children**/
+.article-flex { 
+    display: flex;
+    flex-flow: column;
+}
+
+.article-image {
+    order: -1;
+    margin: 3em 0 1em 0;
+} 
+    
+.article-info {
+    order: -1;
+}
+
+.article-new {
+    border-bottom: 1px solid #707070;
+}
+
+.widget-flex {
+    display: flex;
+    flex-flow: column;
+}
+
+.widget-border {
+    border:20px solid #EBEBEB;
+}
+
+
+
+.widget-about-image {
+    width: 100%;
+    height: 133px;
+    object-fit: cover;
+}
+
+.widget-image {
+    width: 100%;
+    height: 87px;
+    object-fit: cover;
+}

@@ -6,89 +6,95 @@
   <title>Living the simple life</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Ubuntu:ital,wght@300,,400;1,700&display=swap" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-    <header>
-        <div class="container">  
-        <div class="page-title">  
-            <h1>Living the simple life</h1>
-            <p> A blog exploring minimalism in life</p>
-        </div>
-        <div class="nav">
-            <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">about me</a></li>
-            <li><a href="#">recent posts</a></li>
-            </ul>
-        </div>
-        </div>
-    </header>
+    <div class="header-full-width">
+        <header>
+            <div class="container header-text">  
+                <div class="page-title">  
+                    <h1>Living the simple life</h1>
+                    <p class="page-title-description"> A blog exploring minimalism in life</p>
+                </div>
+                <div class="nav">
+                    <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about me</a></li>
+                    <li><a href="#">recent posts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
 
     <div class="container main-aside-flexbox">
         <main>
-            <article class="article-new">
+            <article class="article-new article-flex">
                 <h2 class="article-title">Finding simplicity in life</h2>
-                <img src="img/life.jpg" alt="A clean, white, modern desk" class="article-new-image">
+                <img src="img/life.jpg" alt="A clean, white, modern desk" class="article-image">
                 <p class="article-info">July 23, 2019 | 3 comments</p>
                 <p class="article-text"><strong>Life can get complicated really quickly</strong>, but it doesn't have to be! There are many ways to simplify your life, <a href="">a few of which we've explored in the past</a>. This week we're taking a bit of a approach though, in how you can find simplicity in the life you already living.</p>
                 <p class="article-read-more">continue reading</p>
             </article>
 
-            <article class="article-recent-posts">
+            <article class="article-recent-posts article-flex">
                 <h2 class="article-title">Keep cooking simple</h2>
-                <img src="img/food.jpg" alt="Pasta on plate with chopsticks" class="recent-posts-image">
+                <img src="img/food.jpg" alt="Pasta on plate with chopsticks" class="article-image">
                 <p class="article-info">July 19, 2019 | 3 comments</p>
                 <p class="article-text">Food is a very important part of everyone's life. If you want to be healthy, you have to eat healthy. One of the easiest ways to do that is to keep your cooking nice and simple.</p>
                 <p class="article-read-more">continue reading</p>
             </article>
 
-            <article class="article-recent-posts">
+            <article class="article-recent-posts article-flex">
                 <h2 class="article-title">Simplicity and work</h2>
-                <img src="img/work.jpg" alt="White, modern workspace" class="recent-posts-image">
+                <img src="img/work.jpg" alt="White, modern workspace" class="article-image">
                 <p class="article-info">July 12, 2019 | 3 comments</p>
                 <p class="article-text">Work is often a major source of stress. People get frustrated, it ruins their relationship with others and it leads to burnout. By keeping your work life as simple as possible, it will help balance everything out.</p>
                 <p class="article-read-more">continue reading</p>
             </article>
 
-            <article class="article-recent-posts">
+            <article class="article-recent-posts article-flex">
                 <h2 class="article-title">Simple decorations</h2>
-                <img src="img/deco.jpg" alt="Large, green leaves in a vase" class="recent-posts-image">
+                <img src="img/deco.jpg" alt="Large, green leaves in a vase" class="article-image">
                 <p class="article-info">July 3, 2019 | 3 comments</p>
                 <p class="article-text">A home isn't a home until you've decorated a little. People either don't decorate, or they go overboard and it doesn't have the impact they were hoping for. Staying simple will help draw the eye where you want it to and make things pop like never before.</p>
                 <p class="article-read-more">continue reading</p>
             </article>
         </main>
+    </div>
 
-        <aside class="widget>
-            <div class="widget-about">
+    <div class="container">
+        <aside class="widget">
+            <div class="widget-about widget-flex widget-border">
                 <h2 class="widget-title">About me</h2>
                 <img src="img/about-me.jpg" alt="Laughing male hiker" class="widget-about-image">
-                <p>I find life better, and I'm happier, when things are nice and simple.</p>
+                <p class="widget-about-text">I find life better, and I'm happier, when things are nice and simple.</p>
             </div>
 
-            <div class="widget-recent-posts">
+            <div class="widget-recent-posts widget-flex widget-border">
                 <h2 class="widget-title">
                     Recent posts</h2>
                 <h2 class="widget-blog-title">
                     Keeping cooking simple</h2>
-                <img src="img/food.jpg" alt="Pasta on plate with chopsticks" class="widget-recent-posts-image">
+                <img src="img/food.jpg" alt="Pasta on plate with chopsticks" class="widget-image">
                 <h2 class="widget-blog-title">
                     Simplicity and work</h2>
-                <img src="img/work.jpg" alt="Clean, modern desk" class="widget-recent-posts-image">
+                <img src="img/work.jpg" alt="Clean, modern desk" class="widget-image">
                 <h2 class="widget-blog-title">
                     Simple decorations</h2>
-                <img src="img/deco.jpg" alt="Large, green leaves in a vase" class="widget-recent-posts-image">
+                <img src="img/deco.jpg" alt="Large, green leaves in a vase" class="widget-image">
             </div>  
         </aside>
-  </div>
+    </div>
+    
 
   <footer>
-    <p>Living the Simple Life</p>
-    <p>Copyright 2019</p>
+    <p><strong>Living the Simple Life</strong></p>
+    <p class="copyright">Copyright 2019</p>
   </footer>
   
 </body>
