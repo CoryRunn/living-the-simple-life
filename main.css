@@ -109,6 +109,16 @@ footer {
     font-size: 1.125rem;
 }
 
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+    color: yellowgreen;
+}
+
 .copyright {
     font-weight: 300;
 }
