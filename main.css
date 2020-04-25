@@ -17,16 +17,20 @@ h2 {
     font-family: 'Lora', serif;
     color: #143774;
     font-weight: 400;
+    margin: 0;
+    padding: 0;
 } 
 
 h1 {
      font-size: 2rem;
-     margin: 0;
- }
+}
 
 h2 {
     font-size: 1.5rem;
-    margin: 0;
+}
+
+header {
+    text-align: center;
 }
 
 .page-title-description { /* text under h1 */
@@ -70,6 +74,7 @@ nav a:focus {
 strong {
     font-weight: bold;
 }
+
 
 .article-text a {
     color: #1792D2;
@@ -138,7 +143,7 @@ footer a:focus {
 }
 
 .header-text {
-    text-align: center;
+   
     padding: 3rem 0 0.5rem 0;
 }
 
@@ -148,16 +153,31 @@ footer {
     margin-top: 4em;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* Parent made a flex container to reorder children**/
 .article-flex { 
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+}
+
+.article-new {
+    display: flex;
+    flex-direction: column;
 }
 
 .article-image,
 .article-info {
     order: -1;
 } 
+
+.article-recent-secondary {
+    order: -1;
+}
     
 .article-image {
     margin: 3em 0 1em 0;
@@ -243,4 +263,67 @@ footer {
 
 .about-page-top-image {
     order: -1;
+}
+
+/*** Desktop Styles ***/
+
+@media (min-width: 1000px) {
+
+    .header-text {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 3em;
+        text-align: left;
+    }
+
+    .page-title {
+        width: 40%;
+    }
+
+    nav li {
+        display: inline;
+        padding-left: 1.5em;
+    }
+    
+    .main-aside-flexbox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main {
+        width: 70%;
+    }
+
+    .aside {
+        width: 25%;
+        margin-top: -1em;
+    }
+
+    aside h2 {
+        font-size: 1.125rem;
+    }
+
+    /* Columns for recent articles */
+    .article-flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent {
+        width: 73%;
+        margin-top: 3em;
+    }
+
+    .article-recent-secondary {
+        width: 25%;
+    }
+
+    .article-image {
+        min-height: 198px;
+        object-fit: cover;
+    }
+
+    .image-deco {
+        object-position: left;
+    }
 }
