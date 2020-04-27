@@ -4,16 +4,18 @@ body {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
     color:#707070;
-    
+    font-size: 1.125rem;
 }
 
 img {
     width: 100%;
+    display: block;
 }
 
 /** Typography**/
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'Lora', serif;
     color: #143774;
     font-weight: 400;
@@ -29,6 +31,14 @@ h2 {
     font-size: 1.5rem;
 }
 
+h3 {
+    color: #1792D2;
+}
+
+p { 
+    line-height: 1.6em;
+}
+
 header {
     text-align: center;
 }
@@ -36,8 +46,9 @@ header {
 .page-title-description { /* text under h1 */
     text-transform: uppercase;
     color: #1792D2;
-    font-size: .65rem; 
-    margin-top: -.1rem;
+    font-size: .75rem; 
+    font-weight: 700;
+    margin: 0;
     letter-spacing: .15em;
 }
 
@@ -75,7 +86,6 @@ strong {
     font-weight: bold;
 }
 
-
 .article-text a {
     color: #1792D2;
 }
@@ -93,8 +103,14 @@ strong {
     letter-spacing: .2em;
 }
 
+.article-read-more:hover,
+.article-read-more:focus {
+    color: #143774;
+    text-decoration: underline;
+}
+
 .article-info {
-    font-size: .875rem;
+    font-size: .75rem;
 }
 
 .widget-title {
@@ -139,11 +155,11 @@ footer a:focus {
 
 .container {
     width: 90%;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .header-text {
-   
     padding: 3rem 0 0.5rem 0;
 }
 
@@ -171,20 +187,22 @@ footer {
 }
 
 .article-image,
-.article-info {
+.article-info,
+.article-recent-secondary {
     order: -1;
 } 
 
-.article-recent-secondary {
-    order: -1;
-}
-    
 .article-image {
     margin: 3em 0 1em 0;
 }
 
 .article-new {
     border-bottom: 1px solid #707070;
+}
+
+.article-recent-secondary .article-info {
+    text-align: right;
+    margin-bottom: -1em;
 }
 
 /* Widgets*/
@@ -267,7 +285,7 @@ footer {
 
 /*** Desktop Styles ***/
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
 
     .header-text {
         display: flex;
@@ -296,6 +314,7 @@ footer {
 
     .aside {
         width: 25%;
+        min-width: 200px;
         margin-top: -1em;
     }
 
@@ -310,20 +329,42 @@ footer {
     }
 
     .article-recent {
-        width: 73%;
+        width: 68%;
         margin-top: 3em;
     }
 
+    .article-recent-secondary .article-info {
+        text-align: left;
+    }
+
     .article-recent-secondary {
-        width: 25%;
+        width: 30%;
     }
 
     .article-image {
-        min-height: 198px;
+        min-height: 242px;
         object-fit: cover;
+    }
+
+    .article-info {
+        margin-top: -1em;
     }
 
     .image-deco {
         object-position: left;
     }
+
+    /** About-me page desktop **/
+    .about-me-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image-full {
+        width: 100%;
+        max-height: 308px;
+        object-fit: cover;
+        margin: 3em 0;
+    }
 }
+
